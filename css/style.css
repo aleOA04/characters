@@ -92,19 +92,19 @@ header {
 .bachelorette-images-container img{
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .forever-night-images-container img{
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .smooth-operator-images-container img{
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 /*tablet*/
@@ -121,6 +121,7 @@ header {
         display: flex;
         flex-direction: row;
         align-content: center;
+        width: calc((100% - 2 * 10px) / 3);
     }
 }
 
