@@ -4,16 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(210, 222, 233);
-}
-
-/*id=#
-class=.*/
-
-#sec1 {
-    padding: 1rem;
-    background-color: rgb(81, 102, 95);
+.material-symbols-outlined {
+    align-content: center;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 header {
@@ -24,13 +21,26 @@ header {
     background-color: rgb(183, 198, 212);
 }
 
+
 nav {
     padding: auto;
     align-content: space-around;
 }
 
-span {
-    justify-items: space-evenly;
+.span-text {
+    margin: 2rem;
+}
+
+body {
+    background-color: rgb(210, 222, 233);
+}
+
+/*id=#
+class=.*/
+
+#sec1 {
+    padding: 1rem;
+    background-color: rgb(81, 102, 95);
 }
 
 .character-cards-container {
@@ -106,9 +116,13 @@ h6 {
     text-align: center;
 }
 
+p {
+    gap: 5px;
+}
+
 .gallery-of-inspo {
-    width: 75vw;
-    height: 75vh;
+    width: auto;
+    height: auto;
     margin: 7vh auto;
     display: flex;
     flex-direction: column;
@@ -169,12 +183,36 @@ footer {
         background-color: rgb(183, 198, 212);
     }
 
+    .span-text {
+        margin: 1rem;
+    }
+
     .character-card {
         width: calc((100% - 10px) / 2);
     }
 
     .lyrics {
         width: calc((100% - 10px) / 2);
+    }
+
+    h1 {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    h4 {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    h6 {
+        padding: 0.5rem;
+        text-align: center;
     }
 
     .gallery-of-inspo {
@@ -203,6 +241,11 @@ footer {
 
 /*movil*/
 @media (max-width: 768px) {
+
+    span {
+        display: none;
+    }
+
     .character-cards-container {
         display: flex;
         flex-direction: column;
@@ -213,6 +256,30 @@ footer {
         display: flex;
         flex-direction: column;
         align-content: center;
+    }
+
+    .lyrics {
+        width: auto;
+    }
+
+    h1 {
+        padding: 0.2rem;
+        text-align: center;
+    }
+
+    h2 {
+        padding: 0.2rem;
+        text-align: center;
+    }
+
+    h4 {
+        padding: 0.2rem;
+        text-align: center;
+    }
+
+    h6 {
+        padding: 0.2rem;
+        text-align: center;
     }
 
     .gallery-of-inspo {
@@ -237,21 +304,3 @@ footer {
         object-fit: cover;
     }
 }
-
-/*• <header>: Define la cabecera de una página o sección. Suele contener
-títulos, logotipos o datos de introducción.
-• <nav>: Contiene los bloques de enlaces principales de navegación.
-• <main>: Representa el contenido principal y central del documento.
-• <section>: Agrupa contenido temático relacionado, normalmente con su
-propio encabezado.
-• <article>: Define un bloque de contenido autónomo, independiente y
-reutilizable (como una entrada de blog o noticia).
-• <aside>: Contiene información secundaria, como barras laterales, widgets
-o notas al margen.
-• <footer>: Define el pie de página. Suele incluir datos de contacto, avisos
-legales o enlaces de interés.
-
- flex-grow: indica cuánto puede crecer una caja cuando sobra espacio.
-• flex-shrink: indica cuánto puede reducirse cuando falta espacio.
-• flex-basis: establece el tamaño inicial de referencia de una caja antes de
-distribuir el espacio.*/
