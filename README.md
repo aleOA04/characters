@@ -85,6 +85,7 @@ details
 
 ## Acknowledgments
 
+  - [Inspiration](https://ruta-del-agua.vercel.app/)
   - (https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%231f1f1f)
   - (https://css-tricks.com/)
-  - 
+  
