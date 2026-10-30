@@ -82,6 +82,10 @@ class=.*/
     transition: all 0.2s linear;
 }
 
+.character-card:hover p {
+    display: none;
+    transition: all 0.2s linear;
+}
 
 .character-card-image-container img {
     width: 100%;
@@ -136,7 +140,7 @@ h6 {
 }
 
 p {
-    gap: 5px;
+    text-justify: center;
 }
 
 .gallery-of-inspo {
