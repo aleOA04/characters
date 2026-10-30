@@ -5,14 +5,13 @@
 }
 
 body {
-    background-color: rgb(90, 106, 119);
+    background-color: rgb(210, 222, 233);
 }
 
 /*id=#
 class=.*/
 
 #sec1 {
-
     padding: 1rem;
     background-color: rgb(81, 102, 95);
 }
@@ -23,6 +22,15 @@ header {
     justify-content: space-evenly;
     align-content: space-around;
     background-color: rgb(183, 198, 212);
+}
+
+nav {
+    padding: auto;
+    align-content: space-around;
+}
+
+span {
+    justify-items: space-evenly;
 }
 
 .character-cards-container {
@@ -76,11 +84,26 @@ header {
     width: calc((100% - 2 * 10px) /3);
     padding: 1rem;
 
-    h4 {
-        padding: 1rem;
-        text-align: center;
+}
 
-    }
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+h4 {
+    padding: 1rem;
+    text-align: center;
+}
+
+h6 {
+    padding: 1rem;
+    text-align: center;
 }
 
 .gallery-of-inspo {
@@ -95,6 +118,7 @@ header {
 .bachelorette-images-container {
     display: flex;
     flex-direction: row;
+    object-fit: cover;
 }
 
 .bachelorette-images-container img {
@@ -106,6 +130,7 @@ header {
 .forever-night-images-container {
     display: flex;
     flex-direction: row;
+    object-fit: cover;
 }
 
 .forever-night-images-container img {
@@ -117,6 +142,7 @@ header {
 .smooth-operator-images-container {
     display: flex;
     flex-direction: row;
+    object-fit: cover;
 }
 
 .smooth-operator-images-container img {
@@ -129,12 +155,20 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: bottom;
     background-color: rgb(183, 198, 212);
 }
 
 /*tablet*/
 @media screen and (max-width: 992px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-around;
+        background-color: rgb(183, 198, 212);
+    }
+
     .character-card {
         width: calc((100% - 10px) / 2);
     }
@@ -145,6 +179,7 @@ footer {
 
     .gallery-of-inspo {
         width: calc((100% - 10px) / 2);
+        overflow: auto;
     }
 
     .bachelorette-images-container img {
@@ -214,4 +249,9 @@ reutilizable (como una entrada de blog o noticia).
 • <aside>: Contiene información secundaria, como barras laterales, widgets
 o notas al margen.
 • <footer>: Define el pie de página. Suele incluir datos de contacto, avisos
-legales o enlaces de interés.*/
+legales o enlaces de interés.
+
+ flex-grow: indica cuánto puede crecer una caja cuando sobra espacio.
+• flex-shrink: indica cuánto puede reducirse cuando falta espacio.
+• flex-basis: establece el tamaño inicial de referencia de una caja antes de
+distribuir el espacio.*/
